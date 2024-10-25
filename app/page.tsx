@@ -1,3 +1,7 @@
 export default function Home() {
-  return <h1 className="text-3xl font-bold underline">Hello world</h1>;
+  return (
+    <main className="sm:max-w-[738px] md:max-w-[1024px] lg:max-w-[1366px] mx-auto h-[100vh] px-5 ">
+      fghjkl
+    </main>
+  );
 }
