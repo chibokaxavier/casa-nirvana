@@ -1,17 +1,23 @@
+import Search from "@/components/Search";
+
 export default function Home() {
   return (
-    <main className="sm:max-w-[738px] md:max-w-[1024px] lg:max-w-[1366px] mx-auto h-[100vh] px-5 ">
-      <section className="lg:px-20 sm:px-10 ">
+    <main className="sm:max-w-[738px] md:max-w-[1024px] lg:max-w-[1366px] mx-auto h-[100vh]  ">
+      <section className="lg:px-20  px-10">
         <div className="xl:h-[550px] h-auto mt-[10px] flex flex-col xl:flex-row xl:gap-[90px]">
           {/* Text Section */}
-          <div className="xl:w-[50%] mt-[20px] lg:mt-[80px]">
+          <div className="xl:w-[50%] mt-[20px] lg:mt-[20px]">
+
             <h2 className="font-bold lg:text-5xl  text-3xl sm:text-4xl md:text-[44px]  leading-[50px] sm:leading-[55px]  capitalize lg:mb-5">
-             Find real estate and get your dream place.
+              Find real estate and get your dream place.
             </h2>
             <p className="py-5 text-sm sm:text-base md:text-lg md:leading-[40px] ">
-            Welcome to your journey home! Whether you're searching for a cozy apartment, a family-friendly house, or a luxury getaway, our app connects you with properties that suit your lifestyle and budget. Browse through curated listings, explore neighborhoods.
+              Welcome to your journey home! Whether you're searching for a cozy
+              apartment, a family-friendly house, or a luxury getaway, our app
+              connects you with properties that suit your lifestyle and budget.
+              Browse through curated listings, explore neighborhoods.
             </p>
-           
+            <Search />
           </div>
 
           {/* Image Section */}
@@ -23,6 +29,9 @@ export default function Home() {
             />
           </div>
         </div>
+      </section>
+      <section>
+       
       </section>
     </main>
   );
