@@ -2,8 +2,8 @@ import Search from "@/components/Search";
 
 export default function Home() {
   return (
-    <main className="sm:max-w-[738px] md:max-w-[1024px] lg:max-w-[1366px] mx-auto h-[100vh]  ">
-      <section className="lg:px-20  px-10">
+    <main className="sm:max-w-[738px] md:max-w-[1024px] lg:max-w-[1366px]  h-[100vh]  lg:mx-20    mx-10">
+      <section className="">
         <div className="xl:h-[550px] h-auto mt-[10px] flex flex-col xl:flex-row xl:gap-[90px]">
           {/* Text Section */}
           <div className="xl:w-[50%] mt-[20px] lg:mt-[20px]">

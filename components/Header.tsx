@@ -30,7 +30,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-8 lg:px-20 px-10  sticky top-0 z-50 bg-white sm:max-w-[738px] md:max-w-[1024px] lg:max-w-[1366px] ">
+    <header className="py-8 lg:mx-20  mx-10  sticky top-0 z-50 bg-white sm:max-w-[738px] md:max-w-[1024px] lg:max-w-[1366px] ">
       <Toast ref={toast} />
       <div className=" flex justify-between items-center">
         <Link href={"/"}>
