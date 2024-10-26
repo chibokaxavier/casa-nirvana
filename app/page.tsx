@@ -1,4 +1,5 @@
 import Search from "@/components/Search";
+import Stats from "@/components/Stats";
 
 export default function Home() {
   return (
@@ -7,7 +8,6 @@ export default function Home() {
         <div className="xl:h-[550px] h-auto mt-[10px] flex flex-col xl:flex-row xl:gap-[90px]">
           {/* Text Section */}
           <div className="xl:w-[50%] mt-[20px] lg:mt-[20px]">
-
             <h2 className="font-bold lg:text-5xl  text-3xl sm:text-4xl md:text-[44px]  leading-[50px] sm:leading-[55px]  capitalize lg:mb-5">
               Find real estate and get your dream place.
             </h2>
@@ -18,6 +18,7 @@ export default function Home() {
               Browse through curated listings, explore neighborhoods.
             </p>
             <Search />
+            <Stats />
           </div>
 
           {/* Image Section */}
@@ -30,9 +31,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-       
-      </section>
+      <section></section>
     </main>
   );
 }
