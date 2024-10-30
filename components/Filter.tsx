@@ -11,7 +11,7 @@ const Filter = () => {
         <input
           type="text"
           placeholder="City location"
-          className="w-[80%] border border-black focus:outline-none p-1"
+          className="w-[80%] border border-black focus:outline-none p-2"
         />
       </div>
       <div className="flex mt-4 justify-between items-center w-[80%]">
