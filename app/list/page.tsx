@@ -1,9 +1,16 @@
-import React from 'react'
+import Filter from "@/components/Filter";
+import React from "react";
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div className="flex sm:max-w-[738px] md:max-w-[1024px] lg:max-w-[1366px]  h-[100vh]  lg:mx-20    mx-10">
+      <div className="w-[70%] ">
+        <h2 className="text-2xl">Search results for </h2>
+        <Filter />
+      </div>
+      <div className="w-[30%] bg-yellow-200"></div>
+    </div>
+  );
+};
 
-export default page
+export default page;
