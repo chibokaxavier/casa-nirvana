@@ -1,4 +1,6 @@
+import Card from "@/components/Card";
 import Filter from "@/components/Filter";
+import { dummyData } from "@/lib/data";
 import React from "react";
 
 const page = () => {
@@ -7,6 +9,9 @@ const page = () => {
       <div className="w-[70%] ">
         <h2 className="text-2xl">Search results for </h2>
         <Filter />
+        {dummyData.map((item, index) => {
+          return <Card key={item.id} item={item} />;
+        })}
       </div>
       <div className="w-[30%] bg-yellow-200"></div>
     </div>
