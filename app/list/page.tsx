@@ -1,5 +1,7 @@
+'use client'
 import Card from "@/components/Card";
 import Filter from "@/components/Filter";
+import Map from "@/components/Map";
 import { dummyData } from "@/lib/data";
 import React from "react";
 
@@ -13,7 +15,7 @@ const page = () => {
           return <Card key={item.id} item={item} />;
         })}
       </div>
-      <div className="w-[30%] bg-yellow-200"></div>
+      <div className="w-[30%] "><Map/></div>
     </div>
   );
 };
