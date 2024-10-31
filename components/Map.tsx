@@ -3,6 +3,7 @@ import React from "react";
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
 import { Icon, LatLngExpression } from "leaflet";
 import "leaflet/dist/leaflet.css";
+import Link from "next/link";
 
 const myIcon = new Icon({
   iconUrl: "/locationn.jpg", // Path relative to the public directory
@@ -49,14 +50,16 @@ const Map = ({ item }: ItemProps) => {
             icon={myIcon}
           >
             <Popup>
-              <div className="flex gap-10 w-[200px] h-[100px] justify-center items-center">
-                <img src={marker.img} alt="" className="size-10" />
-                <div className="">
-                  <p>Apartment {marker.id}</p>
-                  <p>{marker.bedrooms} Bedroom</p>
-                  <p className="font-semibold">$ {marker.price}</p>
+              <Link href={`/${marker.id}`}>
+                <div className="flex gap-10 w-[200px] h-[100px] justify-center items-center">
+                  <img src={marker.img} alt="" className="size-10" />
+                  <div className="">
+                    <p>Apartment {marker.id}</p>
+                    <p>{marker.bedrooms} Bedroom</p>
+                    <p className="font-semibold">$ {marker.price}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </Popup>
           </Marker>
         );
