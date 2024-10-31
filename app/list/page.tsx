@@ -15,7 +15,7 @@ const page = () => {
           return <Card key={item.id} item={item} />;
         })}
       </div>
-      <div className="w-[30%] "><Map/></div>
+      <div className="w-[30%] "><Map item={dummyData}/></div>
     </div>
   );
 };

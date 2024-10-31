@@ -1,5 +1,7 @@
+import Map from "@/components/Map";
 import Search from "@/components/Search";
 import Stats from "@/components/Stats";
+import { dummyData } from "@/lib/data";
 
 export default function Home() {
   return (
@@ -31,7 +33,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section></section>
+      <section>
+        <Map item={dummyData}/>
+      </section>
     </main>
   );
 }

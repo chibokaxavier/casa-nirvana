@@ -18,8 +18,8 @@ export const dummyData = [
     bathrooms: 3,
     price: 4500,
     address: "456 Oak Drive, Greenville",
-    latitude: 34.0522,
-    longitude: -118.2437,
+    latitude: 40.7522,
+    longitude: -73.2437,
   },
   {
     id: 3,
@@ -29,8 +29,8 @@ export const dummyData = [
     bathrooms: 4,
     price: 8500,
     address: "789 Pine Lane, Beverly Hills",
-    latitude: 34.0736,
-    longitude: -118.4004,
+    latitude: 41.0736,
+    longitude: -70.4004,
   },
   {
     id: 4,
