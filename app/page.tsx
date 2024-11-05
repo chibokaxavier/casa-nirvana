@@ -33,9 +33,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <Map item={dummyData}/>
-      </section>
+      </section> */}
     </main>
   );
 }
