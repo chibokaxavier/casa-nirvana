@@ -2,7 +2,12 @@ export const dummyData = [
   {
     id: 1,
     title: "Modern Minimalist Home",
-    img: "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: [
+      "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    ],
     bedrooms: 3,
     bathrooms: 2,
     price: 300,
@@ -13,7 +18,12 @@ export const dummyData = [
   {
     id: 2,
     title: "Cozy Family House",
-    img: "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: [
+      "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    ],
     bedrooms: 4,
     bathrooms: 3,
     price: 4500,
@@ -24,7 +34,12 @@ export const dummyData = [
   {
     id: 3,
     title: "Luxury Villa with Pool",
-    img: "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: [
+      "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    ],
     bedrooms: 5,
     bathrooms: 4,
     price: 8500,
@@ -35,7 +50,12 @@ export const dummyData = [
   {
     id: 4,
     title: "Beachside Bungalow",
-    img: "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: [
+      "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    ],
     bedrooms: 2,
     bathrooms: 1,
     price: 3000,
@@ -46,7 +66,12 @@ export const dummyData = [
   {
     id: 5,
     title: "Downtown Condo",
-    img: "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: [
+      "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    ],
     bedrooms: 1,
     bathrooms: 1,
     price: 200,
@@ -57,7 +82,12 @@ export const dummyData = [
   {
     id: 6,
     title: "Mountain Retreat",
-    img: "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: [
+      "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    ],
     bedrooms: 4,
     bathrooms: 3,
     price: 6000,
@@ -68,7 +98,12 @@ export const dummyData = [
   {
     id: 7,
     title: "Modern Minimalist Home",
-    img: "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: [
+      "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    ],
     bedrooms: 3,
     bathrooms: 2,
     price: 3500,
@@ -79,7 +114,12 @@ export const dummyData = [
   {
     id: 8,
     title: "Modern Minimalist Home",
-    img: "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: [
+      "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    ],
     bedrooms: 3,
     bathrooms: 2,
     price: 3500,
@@ -90,7 +130,12 @@ export const dummyData = [
   {
     id: 9,
     title: "Modern Minimalist Home",
-    img: "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: [
+      "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    ],
     bedrooms: 3,
     bathrooms: 2,
     price: 3000,
@@ -101,7 +146,12 @@ export const dummyData = [
   {
     id: 10,
     title: "Modern Minimalist Home",
-    img: "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: [
+      "https://images.pexels.com/photos/29120678/pexels-photo-29120678/free-photo-of-modern-minimalist-bedroom-with-wooden-accents.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    ],
     bedrooms: 3,
     bathrooms: 2,
     price: 9500,

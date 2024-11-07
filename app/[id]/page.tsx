@@ -10,9 +10,10 @@ const page = ({ params }: { params: { id: string } }) => {
         <div className=" w-[70%] flex flex-col">
           <div>image</div>
           <div className="flex flex-col">
-            <div className="flex">
-              <div>
-                <h2 className="text-4xl">{prod?.title}</h2>
+            <div className="flex  items-center justify-between">
+              <div className=" flex flex-col gap-5 mt-20">
+                <p className="text-2xl font-semibold"> {prod?.title}</p>
+
                 <p className="flex items-center ">
                   <CiLocationOn /> <span>{prod?.address}</span>
                 </p>
@@ -20,9 +21,16 @@ const page = ({ params }: { params: { id: string } }) => {
                   $ {prod?.price}
                 </p>
               </div>
-              <div></div>
+              <div className="bg-yellow-100 flex flex-col justify-center items-center size-[100px] rounded-md ">
+                <img
+                  src="/avatar.jpg"
+                  alt=""
+                  className="size-12 rounded-full"
+                />
+                <p>Jon doe</p>
+              </div>
             </div>
-            <div>
+            <div className="mt-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
               exercitationem architecto eos placeat veniam ab molestias hic
               facere, aut reprehenderit, quaerat fugit recusandae temporibus

@@ -7,7 +7,7 @@ import { LuMessageSquarePlus } from "react-icons/lu";
 interface Item {
   id: number;
   title: string;
-  img: string;
+  img: string[];
   bedrooms: number;
   bathrooms: number;
   price: number;
@@ -23,7 +23,7 @@ interface ItemProps {
 const Card = ({ item }: ItemProps) => {
   return (
     <div className="flex mt-10 gap-6">
-      <img src={item.img} alt="" className="w-[400px] h-[300px] rounded-md" />{" "}
+      <img src={item.img[0]} alt="" className="w-[400px] h-[300px] rounded-md" />{" "}
       <div className=" text-xl flex flex-col gap-5">
         <p className="text-2xl font-semibold"> {item.title}</p>
 

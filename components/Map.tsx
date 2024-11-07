@@ -15,7 +15,7 @@ const myIcon = new Icon({
 interface Item {
   id: number;
   title: string;
-  img: string;
+  img: string[];
   bedrooms: number;
   bathrooms: number;
   price: number;
@@ -52,7 +52,7 @@ const Map = ({ item }: ItemProps) => {
             <Popup>
               <Link href={`/${marker.id}`}>
                 <div className="flex gap-10 w-[200px] h-[100px] justify-center items-center">
-                  <img src={marker.img} alt="" className="size-10" />
+                  <img src={marker.img[0]} alt="" className="size-10" />
                   <div className="">
                     <p>Apartment {marker.id}</p>
                     <p>{marker.bedrooms} Bedroom</p>
