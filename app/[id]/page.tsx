@@ -3,7 +3,9 @@ import { dummyData } from "@/lib/data";
 import React, { useState } from "react";
 import { BsTools } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
-import { FaMoneyBillWave } from "react-icons/fa";
+import { FaBath, FaMoneyBillWave } from "react-icons/fa";
+import { IoBedOutline } from "react-icons/io5";
+import { LuSquareSlash } from "react-icons/lu";
 import { MdOutlinePets } from "react-icons/md";
 
 const page = ({ params }: { params: { id: string } }) => {
@@ -139,7 +141,7 @@ const page = ({ params }: { params: { id: string } }) => {
               <div className="flex  items-center">
                 <MdOutlinePets className="text-xl text-yellow-600 mr-3" />
                 <div className="flex flex-col gap-0">
-                  <span className="text-lg">Pet Poloicies</span>
+                  <span className="text-lg">Pet Policies</span>
                   <span className="text-sm">Pets are allowed</span>
                 </div>
               </div>{" "}
@@ -149,6 +151,21 @@ const page = ({ params }: { params: { id: string } }) => {
                   <span className="text-lg">Property fees</span>
                   <span className="text-sm">Must have 3X the rent </span>
                 </div>
+              </div>
+            </div>
+          </div>{" "}
+          <div className="flex flex-col pt-5">
+            <p className="font-semibold text-lg">Sizes</p>
+            <div className="flex gap-5">
+              {" "}
+              <div className=" bg-white p-2 rounded-md flex items-center ">
+                <LuSquareSlash className="mr-1" /> 80 sqft
+              </div>{" "}
+              <div className=" bg-white p-2 rounded-md flex items-center ">
+                <IoBedOutline className="mr-1" /> {prod?.bedrooms} Bed(s)
+              </div>{" "}
+              <div className=" bg-white p-2 rounded-md flex items-center ">
+                <FaBath className="mr-1" /> {prod?.bathrooms} Bathroom(s)
               </div>
             </div>
           </div>
