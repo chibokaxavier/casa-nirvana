@@ -9,6 +9,16 @@ import { IoBedOutline } from "react-icons/io5";
 import { LuSquareSlash } from "react-icons/lu";
 import { MdOutlinePets } from "react-icons/md";
 import { TbBusStop } from "react-icons/tb";
+import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
+import { Icon, LatLngExpression } from "leaflet";
+import "leaflet/dist/leaflet.css";
+
+const myIcon = new Icon({
+  iconUrl: "/locationn.jpg", // Path relative to the public directory
+  iconSize: [18, 65], // Customize the size as needed
+  iconAnchor: [22, 94], // Adjust to position the icon correctly
+  popupAnchor: [-3, -76], // Position the popup relative to the icon
+});
 
 const page = ({ params }: { params: { id: string } }) => {
   const prod = dummyData.find((item) => item.id.toLocaleString() === params.id);
@@ -182,7 +192,7 @@ const page = ({ params }: { params: { id: string } }) => {
                   <p>250m away</p>
                 </p>
               </div>{" "}
-               <div className=" bg-white p-2 rounded-md flex items-center ">
+              <div className=" bg-white p-2 rounded-md flex items-center ">
                 <TbBusStop className="mr-3 text-lg" />{" "}
                 <p className="">
                   <p className="font-semibold">Bus stop</p>
@@ -193,9 +203,31 @@ const page = ({ params }: { params: { id: string } }) => {
                 <FaBowlFood className="mr-3 text-lg" />{" "}
                 <p className="">
                   <p className="font-semibold ">Bus stop</p>
-                  <p className=''>150m away</p>
+                  <p className="">150m away</p>
                 </p>
               </div>{" "}
+            </div>
+          </div>
+          <div className="flex flex-col pt-5">
+            <p className="font-semibold text-lg">Location</p>
+            <div  className="h-[200px]">
+              <MapContainer
+                center={[40.7128, -74.006]}
+                zoom={13}
+                scrollWheelZoom={true}
+                className="h-[200px]"
+              >
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+
+                <Marker
+                
+                  position={[prod!.latitude, prod!.longitude]}
+                  icon={myIcon}
+                ></Marker>
+              </MapContainer>
             </div>
           </div>
         </div>
