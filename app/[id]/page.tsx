@@ -3,10 +3,12 @@ import { dummyData } from "@/lib/data";
 import React, { useState } from "react";
 import { BsTools } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
-import { FaBath, FaMoneyBillWave } from "react-icons/fa";
+import { FaBath, FaMoneyBillWave, FaSchool } from "react-icons/fa";
+import { FaBowlFood } from "react-icons/fa6";
 import { IoBedOutline } from "react-icons/io5";
 import { LuSquareSlash } from "react-icons/lu";
 import { MdOutlinePets } from "react-icons/md";
+import { TbBusStop } from "react-icons/tb";
 
 const page = ({ params }: { params: { id: string } }) => {
   const prod = dummyData.find((item) => item.id.toLocaleString() === params.id);
@@ -156,7 +158,7 @@ const page = ({ params }: { params: { id: string } }) => {
           </div>{" "}
           <div className="flex flex-col pt-5">
             <p className="font-semibold text-lg">Sizes</p>
-            <div className="flex gap-5">
+            <div className="flex justify-between">
               {" "}
               <div className=" bg-white p-2 rounded-md flex items-center ">
                 <LuSquareSlash className="mr-1" /> 80 sqft
@@ -167,6 +169,33 @@ const page = ({ params }: { params: { id: string } }) => {
               <div className=" bg-white p-2 rounded-md flex items-center ">
                 <FaBath className="mr-1" /> {prod?.bathrooms} Bathroom(s)
               </div>
+            </div>
+          </div>{" "}
+          <div className="flex flex-col pt-5">
+            <p className="font-semibold text-lg">Nearby places</p>
+            <div className="flex bg-white justify-between">
+              {" "}
+              <div className=" bg-white p-2 rounded-md flex items-center ">
+                <FaSchool className="mr-3 text-lg" />{" "}
+                <p className="">
+                  <p className="font-semibold">School</p>
+                  <p>250m away</p>
+                </p>
+              </div>{" "}
+               <div className=" bg-white p-2 rounded-md flex items-center ">
+                <TbBusStop className="mr-3 text-lg" />{" "}
+                <p className="">
+                  <p className="font-semibold">Bus stop</p>
+                  <p>100m away</p>
+                </p>
+              </div>{" "}
+              <div className=" bg-white p-2 rounded-md flex items-center ">
+                <FaBowlFood className="mr-3 text-lg" />{" "}
+                <p className="">
+                  <p className="font-semibold ">Bus stop</p>
+                  <p className=''>150m away</p>
+                </p>
+              </div>{" "}
             </div>
           </div>
         </div>
