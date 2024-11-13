@@ -1,7 +1,10 @@
 "use client";
 import { dummyData } from "@/lib/data";
 import React, { useState } from "react";
+import { BsTools } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
+import { FaMoneyBillWave } from "react-icons/fa";
+import { MdOutlinePets } from "react-icons/md";
 
 const page = ({ params }: { params: { id: string } }) => {
   const prod = dummyData.find((item) => item.id.toLocaleString() === params.id);
@@ -35,7 +38,7 @@ const page = ({ params }: { params: { id: string } }) => {
   return (
     <div>
       <div className="flex sm:max-w-[738px] md:max-w-[1024px] lg:max-w-[1366px]  h-[100vh]  lg:mx-20  mx-10">
-        <div className=" w-[70%] flex flex-col justify-between">
+        <div className=" w-[70%] flex flex-col justify-between px-5">
           <div className="flex justify-between ">
             <div className="w-[600px] h-[400px] ">
               <img
@@ -122,7 +125,34 @@ const page = ({ params }: { params: { id: string } }) => {
           </div>
         </div>
 
-        <div className="w-[30%]">bgh</div>
+        <div className="w-[30%] bg-yellow-50 p-5 rounded-md flex-col">
+          <div className="flex flex-col">
+            <p className="font-semibold text-lg">General</p>
+            <div className="bg-white rounded-md p-2 h-fit flex flex-col gap-5">
+              <div className="flex  items-center">
+                <BsTools className="text-xl text-yellow-600 mr-3" />{" "}
+                <div className="flex flex-col gap-0">
+                  <span className="text-lg">Utilities</span>
+                  <span className="text-sm">Renter is responsible</span>
+                </div>
+              </div>
+              <div className="flex  items-center">
+                <MdOutlinePets className="text-xl text-yellow-600 mr-3" />
+                <div className="flex flex-col gap-0">
+                  <span className="text-lg">Pet Poloicies</span>
+                  <span className="text-sm">Pets are allowed</span>
+                </div>
+              </div>{" "}
+              <div className="flex  items-center">
+                <FaMoneyBillWave className="text-xl text-yellow-600 mr-3" />
+                <div className="flex flex-col gap-0">
+                  <span className="text-lg">Property fees</span>
+                  <span className="text-sm">Must have 3X the rent </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
