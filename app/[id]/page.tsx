@@ -2,11 +2,11 @@
 import { dummyData } from "@/lib/data";
 import React, { useState } from "react";
 import { BsTools } from "react-icons/bs";
-import { CiLocationOn } from "react-icons/ci";
+import { CiBookmark, CiLocationOn } from "react-icons/ci";
 import { FaBath, FaMoneyBillWave, FaSchool } from "react-icons/fa";
 import { FaBowlFood } from "react-icons/fa6";
 import { IoBedOutline } from "react-icons/io5";
-import { LuSquareSlash } from "react-icons/lu";
+import { LuMessageSquarePlus, LuSquareSlash } from "react-icons/lu";
 import { MdOutlinePets } from "react-icons/md";
 import { TbBusStop } from "react-icons/tb";
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
@@ -51,9 +51,9 @@ const page = ({ params }: { params: { id: string } }) => {
 
   return (
     <div>
-      <div className="flex sm:max-w-[738px] md:max-w-[1024px] lg:max-w-[1366px]  h-[100vh]  lg:mx-20  mx-10">
-        <div className=" w-[70%] flex flex-col justify-between px-5">
-          <div className="flex justify-between ">
+      <div className="flex  flex-col xl:flex-row   lg:mx-20  mx-10">
+        <div className=" xl:w-[70%] flex flex-col justify-between px-5">
+          <div className="flex justify-between xl:justify-normal xl:gap-5 ">
             <div className="w-[600px] h-[400px] ">
               <img
                 src={prod?.img[0]}
@@ -76,7 +76,7 @@ const page = ({ params }: { params: { id: string } }) => {
               })}
             </div>
           </div>
-          <div className="flex flex-col mt-10">
+          <div className="flex flex-col mt-5">
             <div className="flex  items-center justify-between">
               <div className=" flex flex-col gap-5 ">
                 <p className="text-2xl font-semibold"> {prod?.title}</p>
@@ -139,7 +139,7 @@ const page = ({ params }: { params: { id: string } }) => {
           </div>
         </div>
 
-        <div className="w-[30%] bg-yellow-50 p-5 rounded-md flex-col">
+        <div className="xl:w-[30%] bg-yellow-50 p-5 rounded-md flex-col ">
           <div className="flex flex-col">
             <p className="font-semibold text-lg">General</p>
             <div className="bg-white rounded-md p-2 h-fit flex flex-col gap-5">
@@ -210,7 +210,7 @@ const page = ({ params }: { params: { id: string } }) => {
           </div>
           <div className="flex flex-col pt-5">
             <p className="font-semibold text-lg">Location</p>
-            <div  className="h-[200px]">
+            <div className="h-[200px]">
               <MapContainer
                 center={[40.7128, -74.006]}
                 zoom={13}
@@ -223,11 +223,19 @@ const page = ({ params }: { params: { id: string } }) => {
                 />
 
                 <Marker
-                
                   position={[prod!.latitude, prod!.longitude]}
                   icon={myIcon}
                 ></Marker>
               </MapContainer>
+            </div>
+            <div className="flex mt-5 justify-between">
+              {" "}
+              <div className="flex cursor-pointer items-center gap-2 bg-white border-yellow-400 p-2">
+                <LuMessageSquarePlus /> <span>Send a message</span>
+              </div>{" "}
+              <div className="flex cursor-pointer bg-white items-center gap-2 border-yellow-400 p-2">
+                <CiBookmark /> <span>Save the place</span>
+              </div>{" "}
             </div>
           </div>
         </div>
