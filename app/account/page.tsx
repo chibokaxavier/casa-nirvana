@@ -2,6 +2,7 @@
 import { dummyData } from "@/lib/data";
 import React from "react";
 import Card from "@/components/Card";
+import Messages from "@/components/Messages";
 
 const page = () => {
   return (
@@ -42,34 +43,8 @@ const page = () => {
             })}
           </div>
         </div>
-        <div className="xl:w-[30%] bg-gray-50 p-5 rounded-md flex-col ">
-          <p className="text-3xl">Messages</p>
-          <div className="h-[300px] overflow-y-auto flex flex-col gap-5">
-            <div className=" h-fit  bg-yellow-300 flex items-center justify-between px-4 py-5 ">
-              {" "}
-              <img src="/avatar.jpg" className="size-8 rounded-full" alt="" />
-              <p className="font-semibold">John doe</p>{" "}
-              <p className="text-sm ">Lorem ipsum dolor sit amet consecte</p>
-            </div>{" "}
-            <div className=" h-fit  bg-yellow-300 flex items-center justify-between px-4 py-5 ">
-              {" "}
-              <img src="/avatar.jpg" className="size-8 rounded-full" alt="" />
-              <p className="font-semibold">John doe</p>{" "}
-              <p className="text-sm ">Lorem ipsum dolor sit amet consecte</p>
-            </div>{" "}
-            <div className=" h-fit  bg-yellow-300 flex items-center justify-between px-4 py-5 ">
-              {" "}
-              <img src="/avatar.jpg" className="size-8 rounded-full" alt="" />
-              <p className="font-semibold">John doe</p>{" "}
-              <p className="text-sm ">Lorem ipsum dolor sit amet consecte</p>
-            </div>{" "}
-            <div className=" h-fit  bg-yellow-300 flex items-center justify-between px-4 py-5 ">
-              {" "}
-              <img src="/avatar.jpg" className="size-8 rounded-full" alt="" />
-              <p className="font-semibold">John doe</p>{" "}
-              <p className="text-sm ">Lorem ipsum dolor sit amet consecte</p>
-            </div>{" "}
-          </div>
+        <div className="xl:w-[30%] bg-gray-50 sticky top-0 h-fit p-5 rounded-md flex-col ">
+        <Messages/>
         </div>
       </div>
     </div>
