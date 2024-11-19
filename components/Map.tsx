@@ -20,8 +20,8 @@ interface Item {
   bathrooms: number;
   price: number;
   address: string;
-  latitude: number;
-  longitude: number;
+  latitude: number ;
+  longitude: number ;
 }
 
 interface ItemProps {

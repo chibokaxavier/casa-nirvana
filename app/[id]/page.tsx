@@ -223,7 +223,10 @@ const page = ({ params }: { params: { id: string } }) => {
                 />
 
                 <Marker
-                  position={[prod!.latitude, prod!.longitude]}
+                  position={[
+                    prod?.latitude ?? 0, // Provide a default value if latitude is undefined
+                    prod?.longitude ?? 0, // Provide a default value if longitude is undefined
+                  ]}
                   icon={myIcon}
                 ></Marker>
               </MapContainer>
